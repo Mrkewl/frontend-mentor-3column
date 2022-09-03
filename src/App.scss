@@ -1,0 +1,164 @@
+@import "./scss/variables";
+
+.grid-container {
+  @media only screen and (min-width: 375px) {
+    // background-color: white;
+    height: 200vh;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 20% auto;
+  }
+  @media only screen and (min-width: 500px) {
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 0;
+    justify-items: center;
+    padding: 20vh 22vw;
+
+  }
+
+  &-sedans {
+    background-color: orange;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    &-icon {
+      background-repeat: no-repeat;
+      //   background-position: center;
+      width: 5;
+      height: 50px;
+      color: white;
+      background-image: url(./images/icon-sedans.svg);
+      z-index: 10;
+    }
+    &-header {
+      color: white;
+      font-size: 4rem;
+    }
+    &-icon,
+    &-header,
+    &-para,
+    &-button {
+      margin-top: 20px;
+      margin-left: 50px;
+      text-align: left;
+      margin-right: 50px;
+    }
+    &-para {
+      font-size: 1.7rem;
+      color: white;
+    }
+
+    &-button {
+      //   width: 40vw;
+      border-radius: 50px;
+      height: 50px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: orange;
+      border: 0;
+    }
+  }
+  &-suvs {
+    background-color: $Dark-cyan;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    &-icon {
+      background-repeat: no-repeat;
+      //   background-position: center;
+      width: 5;
+      height: 50px;
+      color: white;
+      background-image: url(./images/icon-suvs.svg);
+      z-index: 10;
+    }
+    &-header {
+      color: white;
+      font-size: 4rem;
+    }
+    &-icon,
+    &-header,
+    &-para,
+    &-button {
+      margin-top: 20px;
+      margin-left: 50px;
+      text-align: left;
+      margin-right: 50px;
+    }
+    &-para {
+      font-size: 1.7rem;
+      color: white;
+    }
+
+    &-button {
+      //   width: 40vw;
+      border-radius: 50px;
+      height: 50px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $Dark-cyan;
+      border: 0;
+    }
+  }
+  &-luxury {
+    background-color: $Very-dark-cyan;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    &-icon {
+      background-repeat: no-repeat;
+      //   background-position: center;
+      width: 5;
+      height: 50px;
+      color: white;
+      background-image: url(./images/icon-luxury.svg);
+      z-index: 10;
+    }
+    &-header {
+      color: white;
+      font-size: 4rem;
+    }
+    &-icon,
+    &-header,
+    &-para,
+    &-button {
+      margin-top: 20px;
+      margin-left: 50px;
+      text-align: left;
+      margin-right: 50px;
+    }
+    &-para {
+      font-size: 1.7rem;
+      color: white;
+    }
+
+    &-button {
+      //   width: 40vw;
+      border-radius: 50px;
+      height: 50px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $Very-dark-cyan;
+      border: 0;
+    }
+  }
+}
